@@ -29,7 +29,7 @@ const Cards = ({ item }) => {
           >
             <div className="font-semibold text-[14px] flex gap-2 items-center text-white">
               <Avatar sx={{ width: "32px", height: "32px" }}></Avatar>
-              {item?.author}
+              {item?.name}
             </div>
             <DownloadRounded
               onClick={() => FileSaver.saveAs(item?.photo, "download.jpg")}
